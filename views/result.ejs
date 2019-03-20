@@ -9,22 +9,19 @@
 <div class="row">
 </br>
 </br>
+<h1><%=data.length%></h1>
+<%for(var i=0;i<=data.length;i++)
+{%>
+  
+
+<h1>Hey</h1>
+<%}%>
 
 
 
 
-<% data.states.forEach(function(st)
-{ %>
-    <div class="col-sm-4">
-            <div class="card">
-              <div class="card-body">
-                <h3 class="card-title"><%=st.state.state_id%></h5>
-                <p class="card-text"><%=st.state.state_name%></p>
-                
-              </div>
-            </div>
-          </div>
-<%})%>
+
+
 
     </div>
 <% include partials/footer %>

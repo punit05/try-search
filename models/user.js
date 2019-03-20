@@ -1,14 +1,16 @@
 const mongoose = require('mongoose');
-//const Schema = mongoose.Schema; or
 const { Schema }=mongoose;
 
+
+
 const userSchema = new Schema({
-    linkedinID:String,
-    googleId:String,
-    EmailID:String,
-    password:String
-    
+   state_id:String,
+   state_name:String
 
 });
 //creating the collection users
-mongoose.model('users',userSchema);
+module.exports=mongoose.model("User",userSchema);
+
+
+
+
